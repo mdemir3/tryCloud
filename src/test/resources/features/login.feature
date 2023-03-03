@@ -1,13 +1,12 @@
 @login
 Feature: Users should be able to login
 
-  Background: User is already in the log in page
+  Scenario: Verify login with valid credentials
     Given the user is on the login page
+    When user use username and passcode
+    And user click the login button
 
-@wip
-  Scenario: Verify login with different user types
-    Given the user logged in as "<userType>"
-    Given the user logged in with username as "User1" and password as "UserUser123"
+
 
 
 
