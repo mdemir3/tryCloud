@@ -22,14 +22,27 @@ public  class BasePage {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
+    //Files Button
     @FindBy(css = "[data-id='files']")
     public WebElement Files;
+
+    //"+" icon button
     @FindBy(css="[class='button new']")
     public WebElement icon;
+
+    //New Folder button
     @FindBy(css = "[data-templatename='New folder']")
     public WebElement newFolder;
+
+    //Writing File Name
     @FindBy(id = "view13-input-folder")
     public WebElement FolderName;
+//"-->" button
+    @FindBy(css="[class='icon-confirm']")
+    public WebElement arrow;
+
+    @FindBy(css="[data-file='file13']")
+    public WebElement fileVerify;
 
 
 }
