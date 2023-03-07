@@ -37,27 +37,25 @@ public  class FilesHD_Page {
     @FindBy(css="[data-file='file13']")
     public WebElement fileVerify;
 
-    @FindBy(xpath = "//*[@id='fileList']/tr[1]/td[2]/a/span[3]/a[2]")
+    @FindBy(xpath = "//html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]/td[2]/a/span[3]/a[2]")
     public WebElement threeDot;
 
-    @FindBy(xpath ="//*[@i='fileList']/tr[1]/td[2]/a/span[2]/a[2]")
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a/span[2]/a[2]")
+    public WebElement threeDot2;
+
+    @FindBy(xpath ="//*[@id='fileList']/tr[1]/td[2]/div/ul/li[8]/a")
     public WebElement Delete;
-   ////
+
     @FindBy(xpath = "//*[@id='app-navigation']/ul/li[7]/a")
     public WebElement DeleteSections;
-    ////*[@id="app-navigation"]/ul/li[7]/a
 
-    @FindBy(xpath = "//*[@id='filestable']/thead/tr/th[3]/a")
+    @FindBy(xpath = "//*[@id=\"app-content-trashbin\"]/table/thead/tr/th[3]/a[1]")
     public WebElement SortDeleted;
 
-    ////*[@id="modified"]/span[1]
-    ////*[@id="filestable"]/thead/tr
-////*[@id="headerDate"]
-    @FindBy(xpath = "*[@id='fileList']/tr[1]")
-    public WebElement DeletedFileVerify;
-    ////*[@id="fileList"]/tr[1]
-    ////*[@id="fileList"]/tr[1]/td[1]
 
-    ////*[@id="fileList"]/tr[1]/td[2]/div/ul/li[8]/a
+    @FindBy(xpath = "//html/body/div[3]/div[2]/div[13]/table/tbody/tr[1]")
+    public WebElement DeletedFileVerify;
+
+
 
 }

@@ -1,10 +1,12 @@
 package com.trycloud.step_definitions;
 
 import com.trycloud.pages.FilesHD_Page;
+import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Actions;
 
 public class HikmetDemir_StepDefs {
     FilesHD_Page filesHDPage = new FilesHD_Page();
@@ -57,7 +59,13 @@ public class HikmetDemir_StepDefs {
     }
     @When("user click action-icon from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() throws InterruptedException {
-        filesHDPage.threeDot.click();
+        Thread.sleep(5000);
+        if (filesHDPage.threeDot.isDisplayed()) {
+            filesHDPage.threeDot.click();
+        }
+        else{
+            filesHDPage.threeDot2.click();
+        }
         Thread.sleep(7000);
 
     }
@@ -68,11 +76,16 @@ public class HikmetDemir_StepDefs {
         Thread.sleep(3000);
     }
     @When("the user clicks the \"Deleted file\\/folder” sub-module on the left side")
-    public void the_user_clicks_the_deleted_file_folder_sub_module_on_the_left_side() {
+    public void the_user_clicks_the_deleted_file_folder_sub_module_on_the_left_side() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         filesHDPage.DeleteSections.click();
-        filesHDPage.SortDeleted.click();
+        Thread.sleep(6000);
+filesHDPage.SortDeleted.click();
+        Thread.sleep(6000);
+
+
         Assert.assertTrue(filesHDPage.DeletedFileVerify.isDisplayed());
+
 
 
     }
