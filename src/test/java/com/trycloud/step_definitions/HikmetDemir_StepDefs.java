@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US06_StepDefs {
+public class HikmetDemir_StepDefs {
     FilesHD_Page filesHDPage = new FilesHD_Page();
 
     @Given("user on the dashboard page")
@@ -50,4 +50,32 @@ public class US06_StepDefs {
         Assert.assertTrue(filesHDPage.fileVerify.isDisplayed());
 
     }
+    @Given("user on the home page")
+    public void user_on_the_home_page() {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+    @When("user click action-icon from any file on the page")
+    public void user_click_action_icon_from_any_file_on_the_page() throws InterruptedException {
+        filesHDPage.threeDot.click();
+        Thread.sleep(7000);
+
+    }
+    @When("user choose the \"Delete file\\/folder“ option")
+    public void user_choose_the_delete_file_folder_option() throws InterruptedException {
+        // Write code here that turns the phrase above into concrete actions
+        filesHDPage.Delete.click();
+        Thread.sleep(3000);
+    }
+    @When("the user clicks the \"Deleted file\\/folder” sub-module on the left side")
+    public void the_user_clicks_the_deleted_file_folder_sub_module_on_the_left_side() {
+        // Write code here that turns the phrase above into concrete actions
+        filesHDPage.DeleteSections.click();
+        filesHDPage.SortDeleted.click();
+        Assert.assertTrue(filesHDPage.DeletedFileVerify.isDisplayed());
+
+
+    }
+
+
 }
