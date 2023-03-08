@@ -1,7 +1,10 @@
 
 @Hikmet1
 Feature: As a user, I should be able to add/create
-Background:
+Background:Verify login with valid credentials
+  Given the user is on the login page
+  When user use username and passcode
+  And user click the login button
 Scenario: : Verify users can add the folder
 Given user on the dashboard page
 When the user clicks the "Files" module
