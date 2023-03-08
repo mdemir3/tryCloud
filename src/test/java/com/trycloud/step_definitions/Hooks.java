@@ -19,6 +19,7 @@ In this class we will be able to create "pre" and "post" condition
 for ALL the SCENARIOS and even STEPS.
  */
 public class Hooks {
+    LoginStepDefs loginStepDefs = new LoginStepDefs();
 
     //import the @Before coming from io.cucumber.java
     @Before (order = 1)
@@ -27,12 +28,17 @@ public class Hooks {
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        loginStepDefs.userUseUsernameAndPasscode();
+        loginStepDefs.user_click_the_login_button();
+
     }
 
     //@Before (value = "@login", order = 2 )
     public void login_scenario_before(){
         System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
+
     }
+
 
     /*
     @After will be executed automatically after EVERY scenario in the project.
