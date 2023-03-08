@@ -39,7 +39,7 @@ public class HikmetDemir_StepDefs {
     public void user_write_a_folder_name() {
         // Write code here that turns the phrase above into concrete actions
 
-        filesHDPage.FolderName.sendKeys("file13");
+        filesHDPage.FolderName.sendKeys("File12");
     }
     @When("the user click submit icon")
     public void the_user_click_submit_icon() {
@@ -60,12 +60,7 @@ public class HikmetDemir_StepDefs {
     @When("user click action-icon from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() throws InterruptedException {
         Thread.sleep(5000);
-        if (filesHDPage.threeDot.isDisplayed()) {
-            filesHDPage.threeDot.click();
-        }
-        else{
-            filesHDPage.threeDot2.click();
-        }
+        filesHDPage.threeDot.click();
         Thread.sleep(7000);
 
     }
@@ -80,8 +75,10 @@ public class HikmetDemir_StepDefs {
         // Write code here that turns the phrase above into concrete actions
         filesHDPage.DeleteSections.click();
         Thread.sleep(6000);
-filesHDPage.SortDeleted.click();
-        Thread.sleep(6000);
+        filesHDPage.SortDeleted.click();
+        Thread.sleep(3000);
+        filesHDPage.SortDeleted.click();
+
 
 
         Assert.assertTrue(filesHDPage.DeletedFileVerify.isDisplayed());
