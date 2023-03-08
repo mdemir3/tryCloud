@@ -23,6 +23,9 @@ public class TC_FilesPage {
     @FindBy (xpath = "//td[@class='filename']//span[@class='innernametext'][normalize-space()='New folder']")
     public WebElement folderInFavorites;
 
+    @FindBy (xpath = "//h2[.='No favorites yet']")
+    public WebElement noFavoritesYet;
+
 
 
 
