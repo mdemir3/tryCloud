@@ -39,10 +39,9 @@ public  class FilesHD_Page {
 
     @FindBy(xpath = "//tr[@data-file='File12']/td[2]/a[1]/span[3]/a[2]")
     public WebElement threeDot;
-    //*[@id="fileList"]/tr[9]
 
-    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a/span[2]/a[2]")
-    public WebElement threeDot2;
+
+
 
     @FindBy(xpath ="//*[@id='fileList']/tr[1]/td[2]/div/ul/li[8]/a")
     public WebElement Delete;

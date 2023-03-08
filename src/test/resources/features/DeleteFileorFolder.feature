@@ -1,4 +1,4 @@
-@Hikmet
+@Hikmet2
 Feature: As a user, I should be able to delete a file/folder.
   Background:Verify login with valid credentials
     Given the user is on the login page
