@@ -26,7 +26,7 @@ public class mainMenuStepDefs {
         List<String> each = new ArrayList<>();
 
        for (WebElement element : menuPage.appMenu) {
-           Thread.sleep(1000);
+           Thread.sleep(5000);
            each.add(element.getAttribute("aria-label"));
            if (element.isEnabled()){
                System.out.println("element is "+element.getAttribute("aria-label")+" clickable");
