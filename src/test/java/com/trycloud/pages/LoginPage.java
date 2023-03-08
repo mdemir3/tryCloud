@@ -20,7 +20,6 @@ public class LoginPage {
     public WebElement userName;
 
 
-
     @FindBy(id="password")
     public WebElement password;
 
