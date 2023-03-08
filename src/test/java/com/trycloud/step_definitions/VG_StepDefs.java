@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
-public class US04_StepDefs {
+public class VG_StepDefs {
 
 
     AccessFilesModule accessFilesModule = new AccessFilesModule();
