@@ -11,7 +11,7 @@ public class TC_FilesPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy (xpath = "(//span[@class='icon icon-more'])[2]")
+    @FindBy (xpath = "(//a[@class='action action-menu permanent'])[1]")
     public WebElement actionIcon;
 
     @FindBy (xpath = "//span[normalize-space()='Remove from favorites']")
