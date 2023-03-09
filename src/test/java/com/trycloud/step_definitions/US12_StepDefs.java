@@ -5,6 +5,8 @@ import com.trycloud.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class US12_StepDefs {
 
@@ -25,7 +27,7 @@ public class US12_StepDefs {
 
         Assert.assertTrue(tc_filesPage.showRichWorkPlaceCheckbox.isEnabled());
         Assert.assertTrue(tc_filesPage.showHiddenFilesCheckbox.isEnabled());
-        Assert.assertTrue(tc_filesPage.showRichWorkPlaceCheckbox.isEnabled());
+        Assert.assertTrue(tc_filesPage.showRecommendationCheckbox.isEnabled());
 
 
     }
