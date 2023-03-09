@@ -1,8 +1,6 @@
 package com.trycloud.step_definitions;
 
 import com.trycloud.pages.BasePage;
-import com.trycloud.pages.LoginPage;
-import com.trycloud.pages.SearchPage;
 import com.trycloud.pages.US05Page;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -10,12 +8,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class US05_StepDefs {
 
     BasePage basePage = new BasePage();
-    LoginPage loginPage = new LoginPage();
 
     US05Page us05Page = new US05Page();
 
