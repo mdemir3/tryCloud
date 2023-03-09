@@ -41,7 +41,8 @@ public class TC_FilesPage {
     @FindBy (xpath = "//input[@class='submit icon-confirm has-tooltip']")
     public WebElement commentButtonToPost;
 
-
+    @FindBy (xpath = "//button[@class='settings-button']")
+    public WebElement settingsButton;
 
 
 
