@@ -44,8 +44,13 @@ public class TC_FilesPage {
     @FindBy (xpath = "//button[@class='settings-button']")
     public WebElement settingsButton;
 
+    @FindBy (xpath = "//label[.='Show rich workspaces']")
+    public WebElement showRichWorkPlaceCheckbox;
 
+    @FindBy (xpath = "//label[.='Show recommendations']")
+    public WebElement showRecommendationCheckbox;
 
-
+    @FindBy (xpath = "//label[.='Show hidden files']")
+    public WebElement showHiddenFilesCheckbox;
 
 }
