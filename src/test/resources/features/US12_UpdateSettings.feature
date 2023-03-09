@@ -1,3 +1,4 @@
+@tamara
 Feature:As a user, I should be able to update settings
 
   Scenario: Verify the users can check any checkbox on the Files page.

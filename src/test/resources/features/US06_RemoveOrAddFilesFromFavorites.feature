@@ -1,7 +1,8 @@
+@tamara
 Feature: As a user, I should be able to remove files from favorites
   Story: As a user, I should be able to remove files or folders from favorites.
 
-
+@tamara
   Scenario: verify users to remove files to Favorites
     Given user on the dashboard page
     When the user clicks the "Files" module
