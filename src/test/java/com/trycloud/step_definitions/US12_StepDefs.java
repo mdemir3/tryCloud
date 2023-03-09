@@ -4,6 +4,7 @@ import com.trycloud.pages.TC_FilesPage;
 import com.trycloud.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class US12_StepDefs {
 
@@ -22,7 +23,9 @@ public class US12_StepDefs {
     public void the_user_should_be_able_to_click_any_checkbox() {
         BrowserUtils.sleep(2);
 
-        tc_filesPage.showRichWorkPlaceCheckbox.click();
+        Assert.assertTrue(tc_filesPage.showRichWorkPlaceCheckbox.isEnabled());
+        Assert.assertTrue(tc_filesPage.showHiddenFilesCheckbox.isEnabled());
+        Assert.assertTrue(tc_filesPage.showRichWorkPlaceCheckbox.isEnabled());
 
 
     }
