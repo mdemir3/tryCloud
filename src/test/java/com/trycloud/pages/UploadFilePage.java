@@ -26,4 +26,7 @@ public class UploadFilePage {
     @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr")
     public WebElement verifyFile;
 
+    @FindBy(xpath = "/html/body/header/div[1]/ul/li[7]/a")
+    public WebElement Contacts;
+
 }
