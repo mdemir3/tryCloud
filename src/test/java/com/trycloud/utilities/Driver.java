@@ -47,6 +47,8 @@ public class Driver {
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
+
+
                 case "firefox":
                     //WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());
