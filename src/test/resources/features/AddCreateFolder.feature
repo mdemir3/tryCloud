@@ -1,8 +1,4 @@
 
-Feature: As a user, I should be able to add/create
-
-Scenario: : Verify users can add the folder
-
 
 
 @Hikmet1
