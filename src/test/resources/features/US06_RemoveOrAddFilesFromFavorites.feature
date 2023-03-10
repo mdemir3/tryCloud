@@ -1,4 +1,4 @@
-@tamara
+@tamara1
 Feature: As a user, I should be able to remove files from favorites
 
   Background:Verify login with valid credentials
