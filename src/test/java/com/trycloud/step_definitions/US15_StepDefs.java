@@ -1,14 +1,14 @@
 package com.trycloud.step_definitions;
 
-import com.trycloud.pages.UploadFilePage;
+import com.trycloud.pages.ContactModule;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US15 {
-    UploadFilePage uploadFilePage = new UploadFilePage();
+public class US15_StepDefs {
+    ContactModule uploadFilePage = new ContactModule();
     @Given("users on the dashboard page")
     public void users_on_the_dashboard_page() {
         // Write code here that turns the phrase above into concrete actions
