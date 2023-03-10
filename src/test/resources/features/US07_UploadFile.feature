@@ -1,4 +1,4 @@
-@Asel
+@regression
 Feature: As a user, I should be able to upload a file.
 
   Background:Verify login with valid credentials

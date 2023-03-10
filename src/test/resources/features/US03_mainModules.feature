@@ -1,4 +1,4 @@
-@soukaina
+@regression
 Feature: As a user, I should be accessing all the main modules of the app.
 
   Background:Verify login with valid credentials

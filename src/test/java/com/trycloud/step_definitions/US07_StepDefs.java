@@ -26,7 +26,7 @@ public class US07_StepDefs {
     public void usersUploadsFileWithTheUploadFileOption() throws InterruptedException {
 
         // Write code here that turns the phrase above into concrete actions
-        String absolutePath = new File("/Users/asel/Desktop/Upload.docx").getAbsolutePath();
+        String absolutePath = new File("src/test/resources/Upload.txt").getAbsolutePath();
         uploadFilePage.Upload.sendKeys(absolutePath);
         Thread.sleep(3000);
 

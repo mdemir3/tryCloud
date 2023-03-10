@@ -35,7 +35,7 @@ public class US11_StepDefs {
     public void user_write_a_comment_inside_the_input_box() {
 
         String text = "hello World";
-
+        BrowserUtils.sleep(3000);
         tc_filesPage.commentsButton.click();
         tc_filesPage.commentsBox.sendKeys(text);
 

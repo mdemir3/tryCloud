@@ -1,6 +1,6 @@
 package com.trycloud.step_definitions;
 
-import com.trycloud.pages.BasePage;
+
 import com.trycloud.pages.US05Page;
 import com.trycloud.pages.UploadFilePage;
 import com.trycloud.utilities.Driver;
@@ -30,14 +30,14 @@ UploadFilePage uploadFilePage = new UploadFilePage();
     @When("the user uploads a file with the upload file option")
     public void the_user_uploads_a_file_with_the_upload_file_option() throws InterruptedException {
 
-        String absolutePath = new File("/Users/asel/Desktop/Upload.docx").getAbsolutePath();
+        String absolutePath = new File("src/test/resources/Upload.txt").getAbsolutePath();
         uploadFilePage.Upload.sendKeys(absolutePath);
         Thread.sleep(3000);
 
     }
 
 
-  //  us05Page.uploadIcon.sendKeys("C:\\Users\\ztpol\\Desktop\\CYDEO\\Interview");
+
 
 
 

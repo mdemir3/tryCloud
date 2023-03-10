@@ -1,6 +1,7 @@
 package com.trycloud.step_definitions;
 
 import com.trycloud.pages.FilesHD_Page;
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -48,7 +49,8 @@ public class HikmetDemir_StepDefs {
 
     }
     @Then("Verify the folder is displayed on the page")
-    public void verify_the_folder_is_displayed_on_the_page() {
+    public void verify_the_folder_is_displayed_on_the_page()  {
+        BrowserUtils.sleep(3);
         Assert.assertTrue(filesHDPage.fileVerify.isDisplayed());
 
     }

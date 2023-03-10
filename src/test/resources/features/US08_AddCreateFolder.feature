@@ -1,7 +1,7 @@
 
 
 
-@Hikmet1
+@regression
 Feature: As a user, I should be able to add/create
 Background:Verify login with valid credentials
   Given the user is on the login page

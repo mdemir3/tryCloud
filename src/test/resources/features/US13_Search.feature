@@ -1,4 +1,4 @@
-@soukaina
+@regression
 Feature:  As a user, I should be able to search any item/ users from the homepage.
 
   Background:Verify login with valid credentials

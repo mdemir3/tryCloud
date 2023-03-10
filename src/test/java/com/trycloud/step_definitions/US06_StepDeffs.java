@@ -22,8 +22,8 @@ public class US06_StepDeffs {
 
     }
 
-    @When("user choose the {string} option")
-    public void user_choose_the_option(String string) {
+    @When("User choose the {string} option")
+    public void User_choose_the_option(String string) {
 
         tc_filesPage.removeFromFavoritesButton.click();
 

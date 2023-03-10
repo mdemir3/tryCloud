@@ -32,6 +32,7 @@ public class TC_FilesPage {
     @FindBy (xpath = "//a[@id='commentsTabView']")
     public WebElement commentsButton;
 
+
     @FindBy (xpath = "//div[@data-placeholder='New comment …']")
     public WebElement commentsBox;
 

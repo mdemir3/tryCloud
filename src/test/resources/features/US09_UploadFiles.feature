@@ -1,4 +1,4 @@
-
+@regression
 Feature: As a user, I should be able to upload files to existing folders on the Files page.
 
   Background:Verify login with valid credentials
@@ -9,7 +9,7 @@ Feature: As a user, I should be able to upload files to existing folders on the 
   @uploadFolder
   Scenario: Verify users can upload a file to an existing folder.
 
-    Given user on the dashboard page
+    Given User on the dashboard page
 
     When the user clicks the "Files" module
 
