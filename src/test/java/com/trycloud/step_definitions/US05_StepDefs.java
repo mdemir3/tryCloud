@@ -1,7 +1,9 @@
 package com.trycloud.step_definitions;
 
-import com.trycloud.pages.BasePage;
+
+
 import com.trycloud.pages.US05Page;
+import com.trycloud.pages.mainMenuPage;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,19 +13,14 @@ import org.openqa.selenium.interactions.Actions;
 
 public class US05_StepDefs {
 
-    BasePage basePage = new BasePage();
+
 
     US05Page us05Page = new US05Page();
 
     @Given("user on the home page")
     public void userOnTheHomePage() {
     }
-    @Given("user click on the {string} page")
-    public void userClickOnThePage(String arg0) {
-        basePage.Files.click();
 
-
-    }
     @When("the user clicks action-icon from any file on the page")
     public void the_user_clicks_action_icon_from_any_file_on_the_page() {
         us05Page.actionIcon.click();
