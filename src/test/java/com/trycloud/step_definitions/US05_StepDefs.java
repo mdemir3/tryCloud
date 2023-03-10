@@ -7,6 +7,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.io.File;
+
 public class US05_StepDefs {
 
     UploadFilePage uploadFilePage = new UploadFilePage();
@@ -38,9 +40,11 @@ public class US05_StepDefs {
     @When("the user uploads a file with the upload file option")
     public void the_user_uploads_a_file_with_the_upload_file_option() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
+        String absolutePath = new File("/Users/asel/Desktop/Upload.docx").getAbsolutePath();
+        uploadFilePage.Upload.sendKeys(absolutePath);
         Thread.sleep(3000);
 
-        uploadFilePage.Upload.sendKeys("/Users/asel/Desktop/Upload.txt");
+
         Thread.sleep(4000);
     }
     @Then("Verify the file is displayed on the page")

@@ -20,7 +20,7 @@ public class UploadFilePage {
     @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/div[1]/div[2]/a")
     public WebElement plus;
 
-    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[1]")
+    @FindBy(xpath = "//input[@type='file']")
     public WebElement Upload;
 
     @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr")
