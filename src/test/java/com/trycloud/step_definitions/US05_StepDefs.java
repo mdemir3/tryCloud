@@ -15,6 +15,9 @@ public class US05_StepDefs {
 
     US05Page us05Page = new US05Page();
 
+    @Given("user on the home page")
+    public void userOnTheHomePage() {
+    }
     @Given("user click on the {string} page")
     public void userClickOnThePage(String arg0) {
         basePage.Files.click();

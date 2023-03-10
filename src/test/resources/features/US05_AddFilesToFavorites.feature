@@ -8,7 +8,7 @@ Feature: As a user, I should be able to access to Files module - Favorites butto
 
   Scenario: Verify users to add files to Favorites
 
-    Given user click on the "Dashboard" page
+    Given user on the home page
     When the user clicks the "Files" module
     When the user clicks action-icon from any file on the page
     And user choose the "Add to favorites" option
