@@ -1,6 +1,10 @@
 @tamara
 Feature: As a user, I should be able to write comments to files/folders.
-  Story: As a user, I should be able to write comments to files/folders.
+
+  Background:Verify login with valid credentials
+    Given the user is on the login page
+    When user use username and passcode
+    And user click the login button
 
   Scenario: Verify users to write comments to files/folder
     Given the user is on the login page

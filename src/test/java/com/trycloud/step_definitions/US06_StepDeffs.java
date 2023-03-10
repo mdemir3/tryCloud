@@ -42,7 +42,7 @@ public class US06_StepDeffs {
     String expectedResult = "No favorites yet";
     String actualResult = tc_filesPage.noFavoritesYet.getText();
 
-    Assert.assertEquals(actualResult,expectedResult);
+    Assert.assertTrue(actualResult.equals(expectedResult));
 
 
 
