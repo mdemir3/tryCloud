@@ -14,13 +14,14 @@ public class US05Page {
     public WebElement Favorites;
 
 
-    @FindBy(xpath = "//a[@data-action='menu']")
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]/td[2]/a/span[3]/a[2]")
     public WebElement actionIcon;
 
-    @FindBy(xpath = "//tr[@data-id][4]")
-    public WebElement chooseFile;
+    //Files Button
+    @FindBy(css = "[data-id='files']")
+    public WebElement Files;
 
-    @FindBy(xpath = "//span[.='Add to favorites']")
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/ul/li[3]/a")
     public WebElement addFavorites;
 
 

@@ -4,9 +4,11 @@ package com.trycloud.step_definitions;
 import com.trycloud.pages.LoginPage;
 import com.trycloud.pages.TC_FilesPage;
 import com.trycloud.utilities.BrowserUtils;
+import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 public class US11_StepDefs {
@@ -35,7 +37,8 @@ public class US11_StepDefs {
     public void user_write_a_comment_inside_the_input_box() {
 
         String text = "hello World";
-        BrowserUtils.sleep(3000);
+
+        BrowserUtils.sleep(3);
         tc_filesPage.commentsButton.click();
         tc_filesPage.commentsBox.sendKeys(text);
 

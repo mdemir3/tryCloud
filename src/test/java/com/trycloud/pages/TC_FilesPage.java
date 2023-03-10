@@ -29,7 +29,7 @@ public class TC_FilesPage {
     @FindBy (xpath = "//span[.='Details']")
     public WebElement detailsSubModule;
 
-    @FindBy (xpath = "//a[@id='commentsTabView']")
+    @FindBy (xpath = "/html/body/div[3]/aside/div/nav/ul/li[2]")
     public WebElement commentsButton;
 
 

@@ -43,7 +43,7 @@ public  class FilesHD_Page {
 
 
 
-    @FindBy(xpath ="//*[@id='fileList']/tr[1]/td[2]/div/ul/li[8]/a")
+    @FindBy(css = "[data-action='Delete']")
     public WebElement Delete;
 
 
