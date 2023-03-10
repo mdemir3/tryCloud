@@ -1,6 +1,6 @@
 package com.trycloud.step_definitions;
 
-import com.trycloud.pages.BasePage;
+
 import com.trycloud.pages.LoginPage;
 import com.trycloud.pages.TC_FilesPage;
 import com.trycloud.utilities.BrowserUtils;
@@ -12,7 +12,7 @@ import org.openqa.selenium.Keys;
 public class US11_StepDefs {
 
     TC_FilesPage tc_filesPage = new TC_FilesPage();
-    BasePage basePage = new BasePage();
+
     LoginPage loginPage = new LoginPage();
 
     @When("user click action-icon  from any file on the page")

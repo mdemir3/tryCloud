@@ -1,6 +1,6 @@
 package com.trycloud.step_definitions;
 
-import com.trycloud.pages.BasePage;
+
 import com.trycloud.pages.LoginPage;
 import com.trycloud.pages.TC_FilesPage;
 import com.trycloud.utilities.BrowserUtils;
@@ -10,7 +10,7 @@ import org.junit.Assert;
 
 public class US06_StepDeffs {
 
-    BasePage basePage = new BasePage();
+
     LoginPage loginPage = new LoginPage();
     TC_FilesPage tc_filesPage = new TC_FilesPage();
 
