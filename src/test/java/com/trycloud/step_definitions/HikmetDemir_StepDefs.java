@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 public class HikmetDemir_StepDefs {
     FilesHD_Page filesHDPage = new FilesHD_Page();
 
-    @Given("user on the dashboard page")
+    @Given("User on the dashboard page")
     public void user_on_the_dashboard_page() {
 
 

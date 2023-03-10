@@ -14,8 +14,8 @@ public class UploadFilePage {
     @FindBy(css = "[data-id= 'files']")
     public WebElement files;
 
-    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]")
-    public WebElement NewFolder;
+    //@FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]")
+   // public WebElement NewFolder;
 
     @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/div[1]/div[2]/a")
     public WebElement plus;
