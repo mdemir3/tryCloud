@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/trycloud/step_definitions",
-        dryRun = true,
+        dryRun = false,
         tags = "@regression",
         publish = true //generating a report with public link
 
