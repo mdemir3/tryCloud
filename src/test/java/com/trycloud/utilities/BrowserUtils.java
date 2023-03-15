@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import static java.time.Duration.ofSeconds;
+
 public class BrowserUtils {
 
 
@@ -63,23 +65,16 @@ public class BrowserUtils {
      */
     public static void waitForInvisibilityOf(WebElement target){
         //Create the object of 'WebDriverWait' class, and set up the constructor args
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+      ///  WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
         //use the 'wait' object with the proper syntax to create explicit wait conditions.
-        wait.until(ExpectedConditions.invisibilityOf(target));
+        //wait.until(ExpectedConditions.invisibilityOf(target));
     }
 
     /*
     This method accepts String title,
     and waits for that Title to contain given String value.
      */
-    public static void waitForTitleContains(String title){
-        //Create the object of 'WebDriverWait' class, and set up the constructor args
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-
-        //use the 'wait' object with the proper syntax to create explicit wait conditions.
-        wait.until(ExpectedConditions.titleContains(title));
-    }
 
     /**
      * This method accepts a dropdown element and returns a List<String> that contains all options values as String.
@@ -198,10 +193,10 @@ public class BrowserUtils {
      * @param time
      * @return
      */
-    public static WebElement waitForVisibility(WebElement element, int time) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
-        return wait.until(ExpectedConditions.visibilityOf(element));
-    }
+   // public static WebElement waitForVisibility(WebElement element, int time) {
+     //   WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
+     //   return wait.until(ExpectedConditions.visibilityOf(element));
+   /// }
 
     /**
      * Waits for element matching the locator to be visible on the page
@@ -210,10 +205,7 @@ public class BrowserUtils {
      * @param time
      * @return
      */
-    public static WebElement waitForVisibility(By locator, int time) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+
 
     /**
      * Waits for provided element to be clickable
@@ -222,10 +214,10 @@ public class BrowserUtils {
      * @param time
      * @return
      */
-    public static WebElement waitForClickablility(WebElement element, int time) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
-        return wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
+  //  public static WebElement waitForClickablility(WebElement element, int time) {
+   //     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds());
+  //      return wait.until(ExpectedConditions.elementToBeClickable(element));
+  //  }
 
     /**
      * Waits for element matching the locator to be clickable
@@ -234,10 +226,7 @@ public class BrowserUtils {
      * @param time
      * @return
      */
-    public static WebElement waitForClickablility(By locator, int time) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
-        return wait.until(ExpectedConditions.elementToBeClickable(locator));
-    }
+
 
     /**
      * waits for backgrounds processes on the browser to complete
@@ -250,12 +239,7 @@ public class BrowserUtils {
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
             }
         };
-        try {
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
-            wait.until(expectation);
-        } catch (Throwable error) {
-            error.printStackTrace();
-        }
+
     }
 
     /**
@@ -480,9 +464,6 @@ public class BrowserUtils {
      * @param by
      * @param time
      */
-    public static void waitForPresenceOfElement(By by, long time) {
-        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time)).until(ExpectedConditions.presenceOfElementLocated(by));
-    }
 
 
 }

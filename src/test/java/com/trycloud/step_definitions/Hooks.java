@@ -19,13 +19,13 @@ In this class we will be able to create "pre" and "post" condition
 for ALL the SCENARIOS and even STEPS.
  */
 public class Hooks {
-    LoginStepDefs loginStepDefs = new LoginStepDefs();
+
 
     //import the @Before coming from io.cucumber.java
     @Before (order = 1)
     public void setupMethod(){
 
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+       // Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 
 
     }

@@ -26,7 +26,7 @@ public class searchBoxSteps {
     }
     @And("users search any existing {string} user name")
     public void usersSearchAnyExistingUserName(String file) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),3);
         wait.until(ExpectedConditions.elementToBeClickable(searchPage.searchBox));
         searchPage.searchBox.sendKeys(file+ Keys.ENTER);
         //searchPage.searchBox.clear();

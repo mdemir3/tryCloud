@@ -13,6 +13,7 @@ import javax.security.auth.login.Configuration;
 public class LoginPage {
 
     public LoginPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
