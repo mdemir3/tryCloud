@@ -14,7 +14,7 @@ public class US05Page {
     public WebElement Favorites;
 
 
-    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]/td[2]/a/span[3]/a[2]")
+    @FindBy(xpath = "//a[@data-action='menu']")
     public WebElement actionIcon;
 
     //Files Button
@@ -24,6 +24,8 @@ public class US05Page {
     @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/tbody/tr[1]/td[2]/div/ul/li[3]/a")
     public WebElement addFavorites;
 
+
+    ///html/body/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a/span[3]/a[2]
 
 
 }

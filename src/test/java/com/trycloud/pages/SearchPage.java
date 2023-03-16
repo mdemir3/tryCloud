@@ -16,7 +16,7 @@ public class SearchPage {
    @FindBy(xpath = "//input[@class='unified-search__form-input']")
     public WebElement searchBox;
 
-   @FindBy(xpath= "//span[@class='unified-search__result-content']")
+   @FindBy(xpath= "//h3[@class='unified-search__result-line-one']")
     public WebElement documentSearched;
 }
 

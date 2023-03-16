@@ -2,6 +2,7 @@ package com.trycloud.step_definitions;
 
 import com.trycloud.pages.LoginPage;
 import com.trycloud.pages.SearchPage;
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.ConfigurationReader;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -34,6 +35,7 @@ public class searchBoxSteps {
 
     @Then("verify the app displays the expected result {string}")
     public void verifyTheAppDisplaysTheExpectedResult(String file) {
+        BrowserUtils.sleep(4);
         String document = searchPage.documentSearched.getText();
         Assert.assertEquals(document,file );
         searchPage.documentSearched.click();

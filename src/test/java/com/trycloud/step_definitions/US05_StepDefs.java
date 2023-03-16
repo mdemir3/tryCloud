@@ -22,21 +22,25 @@ public class US05_StepDefs {
 
     @When("the user clicks action-icon from any file on the page")
     public void the_user_clicks_action_icon_from_any_file_on_the_page() {
+        BrowserUtils.sleep(3);
         us05Page.actionIcon.click();
     }
 
     @When("user choose the {string} option")
     public void user_choose_the_option(String string)  {
-        us05Page.Files.click();
+
+        BrowserUtils.sleep(3);
+        us05Page.addFavorites.click();
 
 
 
     }
     @When("User click the {string} sub-module on the left side")
     public void User_click_the_sub_module_on_the_left_side(String string) {
-       us05Page.actionIcon.click();
+
         BrowserUtils.sleep(3);
-        us05Page.addFavorites.click();
+        us05Page.Favorites.click();
+
 
     }
     @Then("Verify the chosen file is listed on the table")

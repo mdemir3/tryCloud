@@ -18,13 +18,14 @@ public class US06_StepDeffs {
 
     @When("the users click action-icon from any file on the page to remove")
     public void the_users_click_action_icon_from_any_file_on_the_page_to_remove() {
+        BrowserUtils.sleep(3);
         tc_filesPage.actionIcon.click();
 
     }
 
     @When("User choose the {string} option")
     public void User_choose_the_option(String string) {
-
+        BrowserUtils.sleep(3);
         tc_filesPage.removeFromFavoritesButton.click();
 
     }

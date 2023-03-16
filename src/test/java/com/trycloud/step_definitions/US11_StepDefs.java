@@ -20,7 +20,7 @@ public class US11_StepDefs {
     @When("user click action-icon  from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() {
         BrowserUtils.sleep(2);
-        tc_filesPage.actionIcon.click();
+        tc_filesPage.actionIcon2.click();
 
     }
 

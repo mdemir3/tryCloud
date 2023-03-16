@@ -11,8 +11,11 @@ public class TC_FilesPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy (xpath = "(//a[@class='action action-menu permanent'])[1]")
+    @FindBy (xpath = "//a[@class='action action-menu permanent']")
     public WebElement actionIcon;
+
+    @FindBy(xpath = "//tr[@data-type='dir']//a[@class='action action-menu permanent']")
+    public WebElement actionIcon2;
 
     @FindBy (xpath = "//span[.='Remove from favorites']")
     public WebElement removeFromFavoritesButton;
@@ -29,10 +32,13 @@ public class TC_FilesPage {
     @FindBy (xpath = "//span[.='Details']")
     public WebElement detailsSubModule;
 
-    @FindBy (xpath = "/html/body/div[3]/aside/div/nav/ul/li[2]")
+    @FindBy (xpath = "html/body/div[3]/aside/div/nav/ul/li[2]/a")
     public WebElement commentsButton;
 
+    ///html/body/div[3]/aside/div/nav/ul/li[3]/a
+    ///html/body/div[3]/aside/div/nav/ul/li[2]/a
 
+    ///
     @FindBy (xpath = "//div[@data-placeholder='New comment …']")
     public WebElement commentsBox;
 
