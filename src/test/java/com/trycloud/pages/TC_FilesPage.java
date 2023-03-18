@@ -20,7 +20,7 @@ public class TC_FilesPage {
     @FindBy (xpath = "//span[.='Remove from favorites']")
     public WebElement removeFromFavoritesButton;
 
-    @FindBy (xpath = "//a[.='Favorites']")
+    @FindBy (xpath = "/html/body/div[3]/div[1]/ul/li[3]/a")
     public WebElement favoriteSubModule;
 
     @FindBy (xpath = "//td[@class='filename']//span[@class='innernametext'][normalize-space()='New folder']")

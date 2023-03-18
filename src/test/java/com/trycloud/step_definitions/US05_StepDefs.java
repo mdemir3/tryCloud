@@ -38,7 +38,7 @@ public class US05_StepDefs {
     @When("User click the {string} sub-module on the left side")
     public void User_click_the_sub_module_on_the_left_side(String string) {
 
-        BrowserUtils.sleep(3);
+        BrowserUtils.sleep(4);
         us05Page.Favorites.click();
 
 

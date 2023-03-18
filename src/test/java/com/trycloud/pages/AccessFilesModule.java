@@ -13,7 +13,7 @@ public class AccessFilesModule {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//label[@for='select_all_files']")
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/thead/tr/th[1]/label")
     public WebElement checkBox;
 
 

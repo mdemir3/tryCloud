@@ -30,7 +30,7 @@ public class VG_StepDefs {
 
     @When("user click the top-left checkbox of the table")
     public void user_click_the_top_left_checkbox_of_the_table() {
-
+        BrowserUtils.sleep(3);
         accessFilesModule.checkBox.click();
 
     }

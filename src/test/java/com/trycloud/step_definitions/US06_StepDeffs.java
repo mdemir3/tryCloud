@@ -39,7 +39,7 @@ public class US06_StepDeffs {
     @Then("Verify that the file is not listed in the Favorites table")
     public void verify_that_the_file_is_not_listed_in_the_favorites_table() {
 
-    BrowserUtils.sleep(2);
+    BrowserUtils.sleep(3);
     String expectedResult = "No favorites yet";
     String actualResult = tc_filesPage.noFavoritesYet.getText();
 
